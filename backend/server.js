@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Employee Management API is running successfully");
+});
+
 const PORT = process.env.PORT || 5000;
 
 // ---- AI / Databricks Model Serving config ----
