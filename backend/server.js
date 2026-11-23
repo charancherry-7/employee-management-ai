@@ -1,3 +1,4 @@
+
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./db");
@@ -7,6 +8,10 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
+
+app.get("/", (req, res) => {
+  res.send("Employee Management API is running successfully");
+});
 
 // ---- AI / Databricks Model Serving config ----
 const DATABRICKS_HOST = "https://dbc-d936181c-d4dd.cloud.databricks.com";
