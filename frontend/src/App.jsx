@@ -2,8 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
 
 const NODE_BACKEND = "https://employee-mgmt-node-api-gzfnh7fwa5gea7gw.southindia-01.azurewebsites.net";
-const DOC_BACKEND = "https://employee-mgmt-python-ap-cjdvcqfvgkccgwgm.southindia-01.azurewebsites.net";
 
+const DOC_BACKEND = "https://employee-mgmt-python-ap-cjdvcqfvgkccgwgm.southindia-01.azurewebsites.net";
 
 const STAGES = [
   { key: "bronze", label: "BRONZE", sub: "Volumes", desc: "Original files stored in Unity Catalog Volumes" },
